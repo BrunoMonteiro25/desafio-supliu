@@ -256,3 +256,10 @@ th:nth-child(4) {
   height: 35px;
   width: 500px;
 }
+
+.error-message {
+  color: #cf2a2a;
+  margin-top: 5px;
+  font-size: 14px;
+  margin-left: 3px;
+}

@@ -11,6 +11,8 @@
     <div class="container">
         @yield('content')
     </div>
+
     <script src="{{ asset('js/search.js') }}"></script>
+    <script src="{{ asset('js/validacoes.js') }}"></script>
 </body>
 </html>

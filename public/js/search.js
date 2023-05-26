@@ -10,28 +10,34 @@ function searchAlbums() {
 
   for (var i = 0; i < albums.length; i++) {
     var album = albums[i]
-    var albumTitle = album
-      .getElementsByClassName('album-title')[0]
-      .textContent.toLowerCase()
+    var albumTitleElement = album.querySelector('.album-title')
 
-    if (albumTitle.includes(searchTerm)) {
-      album.style.display = 'block'
-      hasResults = true
-    } else {
-      album.style.display = 'none'
+    if (albumTitleElement) {
+      var albumTitle = albumTitleElement.textContent.toLowerCase()
+
+      if (albumTitle.includes(searchTerm)) {
+        album.style.display = 'block'
+        hasResults = true
+      } else {
+        album.style.display = 'none'
+      }
     }
   }
 
-  if (hasResults) {
-    searchResults.textContent = ''
-  } else {
-    searchResults.textContent = noResultsMessage
+  if (searchResults) {
+    if (hasResults) {
+      searchResults.textContent = ''
+    } else {
+      searchResults.textContent = noResultsMessage
+    }
   }
 
-  if (searchTerm === '') {
-    novoAlbumButton.style.display = 'block'
-  } else {
-    novoAlbumButton.style.display = 'none'
+  if (novoAlbumButton) {
+    if (searchTerm === '') {
+      novoAlbumButton.style.display = 'block'
+    } else {
+      novoAlbumButton.style.display = 'none'
+    }
   }
 }
 
@@ -41,7 +47,12 @@ function handleSearch(event) {
   }
 }
 
-document.getElementById('search-btn').addEventListener('click', searchAlbums)
-document
-  .getElementById('search-input')
-  .addEventListener('keydown', handleSearch)
+var searchButton = document.getElementById('search-btn')
+if (searchButton) {
+  searchButton.addEventListener('click', searchAlbums)
+}
+
+var searchInput = document.getElementById('search-input')
+if (searchInput) {
+  searchInput.addEventListener('keydown', handleSearch)
+}
