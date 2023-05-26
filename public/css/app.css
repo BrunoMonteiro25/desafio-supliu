@@ -12,7 +12,7 @@ button:hover {
 
 .container {
   width: 100%;
-  height: max-content;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +25,7 @@ button:hover {
   max-height: max-content;
   object-fit: cover;
   position: relative;
+  position: fixed;
 }
 
 .header {
@@ -262,4 +263,31 @@ th:nth-child(4) {
   margin-top: 5px;
   font-size: 14px;
   margin-left: 3px;
+}
+
+@media (max-width: 865px) {
+  .content,
+  .header {
+    width: 600px;
+  }
+
+  .search input {
+    width: 390px !important;
+  }
+}
+
+@media (max-width: 615px) {
+  .content,
+  .header {
+    width: 400px;
+  }
+
+  .search input {
+    width: 360px !important;
+    margin-bottom: 10px;
+  }
+
+  .search button {
+    margin-bottom: 10px;
+  }
 }
