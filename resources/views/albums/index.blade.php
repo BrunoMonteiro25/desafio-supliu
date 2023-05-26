@@ -12,18 +12,20 @@
     <div class="content">
         <div class="search">
             <p>Digite uma palavra chave:</p>
-            <input type="text" placeholder="Digite aqui..." />
-            <button>Procurar</button>
+            <input type="text" placeholder="Digite aqui..." id="search-input" />
+            <button onclick="searchAlbums()" id="search-btn">Procurar</button>
         </div>
 
-        <div class="novo-album">
+        <p id="search-results" class="search-results"></p>
+
+        <div class="novo-album" id="novo-album">
             <a href="{{ route('albums.create') }}" class="novo-btn">+ Novo Álbum</a>
         </div>
 
         @foreach ($albums as $album)
-        <div class="album">
+        <div class="album" id="album-{{$album->id}}">
             <div class="header-album">
-                <p>Álbum: {{$album->titulo}}, {{ $album->ano }}</p>
+                <p>Álbum: </p><p class="album-title">{{$album->titulo}}, {{ $album->ano }}</p>
 
                 <form action="{{ route('albums.destroy', $album->id) }}" method="POST">
                     @csrf
