@@ -68,7 +68,9 @@ php artisan serve
 ### Lista de álbuns atualizada com a nova faixa
 ![Screenshot_8](https://github.com/BrunoMonteiro25/react-native-clone-netflix/assets/98993736/af1ef0a4-8c1c-4d3c-b1f9-ccc6a6496045)
 
-
+### Pesquisa
+![Screenshot_9](https://github.com/BrunoMonteiro25/react-native-clone-netflix/assets/98993736/36e4ef28-4ab6-4d3c-92ed-3e71e3412252)
+![Screenshot_10](https://github.com/BrunoMonteiro25/react-native-clone-netflix/assets/98993736/1b2440b2-d21d-4da8-a971-eaf5cd71f911)
 
 
 
