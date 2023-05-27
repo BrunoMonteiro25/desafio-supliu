@@ -1,8 +1,8 @@
-#Desafio Supliu Tecnologia
+# Desafio Supliu Tecnologia
 
-###Feito com: PHP (Laravel) + SQLite
+### Feito com: PHP (Laravel) + SQLite
 
-###Para testar o projeto:
+### Para testar o projeto:
 
 1. Clone o projeto com o comando:
 ```
