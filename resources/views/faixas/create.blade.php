@@ -20,7 +20,7 @@
             </div>
             <div class="dados">
                 <label for="duracao">Duração:</label>
-                <input type="text" name="duracao" id="duracao" placeholder="00:00" required>
+                <input type="text" name="duracao" id="duracao" placeholder="0:00" required>
 
                 <p id="duracao-error" class="error-message"></p>
             </div>
