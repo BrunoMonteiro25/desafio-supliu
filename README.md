@@ -42,6 +42,10 @@ Isso criará as tabelas necessárias no banco de dados SQLite.
 php artisan serve
 ```
 
+10. Acesse o projeto na rota:
+http://127.0.0.1:8000
+
+
 ### Funcionalidades
 
 - Ver lista de álbuns e faixas
